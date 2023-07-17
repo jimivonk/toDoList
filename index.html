@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel=stylesheet type="text/css" href="./style.css">
+</head>
+<body>
+    <h1>TODO List</h1>
+    <h2>Add Task</h2>
+    <div class="input-information">
+        <label for="task-input">Add your task:</label> <!--Compulsory-->
+        <input type="text" id="task-input"/>
+        
+        <label for="task-hours">Task estimate:</label> <!--Non compulsory-->
+        <select id="task-hours" class="dropdown">
+            <!-- Options will be filled with JavaScript -->
+        </select>
+        
+        <label for="task-minutes">:</label>        
+        <select id="task-minutes" class="dropdown">
+            <!-- Options will be filled with JavaScript -->
+        </select>
+
+        <button class="button" class="add-button">Add</button>
+        
+    </div>
+    <h2>To Do Today</h2>
+    <div class="w3-container" class="task-list">
+        <div class="task-item" class="hidden" class="toggle-color">
+            <p>Num</p>
+            <p>Some text describing task</p>
+            <p>HH:MM</p> <!--NoEst if none provided-->
+            <button class="edit-button">E</button>
+            <button class="delete-button">D</button>
+            <button class="toggle-up-down">T</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
